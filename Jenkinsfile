@@ -3,7 +3,6 @@ pipeline {
   tools {
     jdk 'jdk8'
     maven 'maven3'
-    ansible 'ansible2'
   }
   stages {
     stage('test java installation') {
