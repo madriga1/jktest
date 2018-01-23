@@ -7,6 +7,7 @@ pipeline {
   stages {
     stage('test java installation') {
       steps {
+        sh 'echo $HOSTNAME'
         sh 'java -version'
         sh 'which java'
       }
