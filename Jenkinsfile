@@ -18,6 +18,12 @@ pipeline {
         sh 'mvn -version'
         sh 'which mvn'
       }
+    stage('test maven installation') {
+      steps {
+        sh 'echo $HOSTNAME'
+        sh 'ansible -v'
+        sh 'which ansible'
+      }
     }
   }
 }
