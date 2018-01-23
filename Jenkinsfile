@@ -22,7 +22,7 @@ pipeline {
     stage('test ansible installation') {
       steps {
         sh 'echo $HOSTNAME'
-        sh 'ansible -v'
+        sh 'ansible --version'
         sh 'which ansible'
       }
     }
