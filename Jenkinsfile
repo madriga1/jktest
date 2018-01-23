@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent lnx2
   tools {
     jdk 'jdk8'
     maven 'maven3'
