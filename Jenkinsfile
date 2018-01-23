@@ -14,6 +14,7 @@ pipeline {
    }
     stage('test maven installation') {
       steps {
+        sh 'echo $HOSTNAME'
         sh 'mvn -version'
         sh 'which mvn'
       }
